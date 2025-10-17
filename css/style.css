@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Rouge+Script&display=swap');
+
+
+:root {
+    --corprojeto1: rgb(172, 10, 10);
+    --corprojeto2: rgb(224, 16, 16);
+    --corprojeto3: rgb(151, 42, 42);
+    --corprojeto4: rgb(170, 170, 21);
+    --corprojeto5: rgb(247, 247, 7);
+    --corprojeto6: rgb(255, 136, 0);
+
+}
+
+body{
+    background-color: var(--corprojeto3);
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    scroll-behavior:smooth;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--corprojeto1);
+    color: whitesmoke;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.156);
+
+
+
+}
+
+nav {
+    display: block;
+    text-align: center;
+    font-size: 1.2em;
+    word-spacing: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: 0.1s ease;
+}
+
+a:hover {
+    color: rgb(157, 157, 157);
+}
+
+footer {
+    width: 100%;
+    height: 8%;
+    background-color: var(--verde);
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-bottom: 2%;
+    text-transform: uppercase;
+    background: linear-gradient(var(--corprojeto3),rgba(253, 51, 0, 0.352));
+}
+
+h3 {
+    padding-bottom: 5px;
+}
+
+h1 {
+    font-size: 2em;
+    color: var(--corprojeto6);
+
+}
+#chamada{font-family: "Rouge Script", cursive; 
+    font-size: 4em;
+    text-shadow: 1px 1px 1px var(--corprojeto1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 80%;
+
+    border-radius: 15px;
+    padding: 6%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    text-align: center;
+
+
+}
+
+
+
+article{
+    background-color: whitesmoke;
+    border-radius: 12px;
+    
+}
+
+aside {
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    max-width: 80%;
+
+
+    border-radius: 15px;
+    padding: 6%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+/* config de links de produtos */
+
+.menu{
+    color: white;
+    background-color: var(--corprojeto1);
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 1px 1px rgb(11, 11, 11);
+}
+
+h1,
+h4,
+h2,
+h5,
+h6 {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.titulos-menu{
+    color: var(--corprojeto3);
+    font-size: 1.6em;
+    padding: 6%;
+
+}
+
+img {
+    width: 100%;
+    padding-top: 2%;
+}
+
+
+#topo{
+    width: 300px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+/* configuração header para mobile */
+@media(min-width:0px) and (max-width:800px){
+    #topo{
+    width: 200px;
+    height: 64px;
+    display: block;
+    margin: auto;
+}
+}
+
+#rodape{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+/* configuração header para mobile */
+@media(min-width:0px) and (max-width:800px){
+    #rodape{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+}
+
+/* Configurações de paragrafos */
+p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+
+}
+
+
+/* Configurações de paragrafos para mobile*/
+
+@media(min-width:0) and (max-width:800px) {
+
+    p {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    h1 {
+        font-size: 1.4em;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1em;
+        
+    }
+
+    .titulos-menu{
+            text-align: center;
+    }
+}
+
+/*DIVS*/
+
+.separador {
+    margin-top: 10%;
+}
+
+.separador-conteudo {
+    margin-top: 5%;
+}
+.separador-conteudo-sobremesa {
+    margin-top: 7%;
+}
+
+
+/* Configurações de DIVS para mobile*/
+@media(min-width:0px) and (max-width:800px) {
+
+    .separador {
+        margin-top: 15%;
+    }
+
+    .separador-conteudo {
+        margin-top: 6%;
+    }
+
+    #chamada{
+    font-size: 2em;
+}
+
+.separador-conteudo-sobremesa{margin-top: 18%;}
+}
+
+@media(min-width:800px) and (max-width:1100px) {
+
+    .separador {
+        margin-top: 12%;
+    }
+
+    .separador-conteudo {
+        margin-top: 6%;
+    }
+
+    #chamada{
+    font-size: 3.3em;
+}
+}
+
+
+/* Configurações das GRIDS de conteudo */
+
+.grid-conteudo {
+    border-radius: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.grid {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    max-width: 1024px;
+    margin: auto;
+    gap: 8px;
+    border-radius: 12px;
+}
+
+.grid div {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 1px;
+    border-radius: 12px;
+}
+
+/* Botão configuração*/
+
+
+
+button {
+    padding: 8px 15px 8px 15px;
+    background-color: rgba(1, 75, 1, 0.293);
+    color: aliceblue;
+    box-shadow: 1px 1px black;
+    border-radius: 3px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    transition: 0.4s ease;
+}
+
+button:hover {
+    background: rgb(0, 112, 0);
+    text-shadow: 1.5px 1.5px black;
+}
+
+/*whats*/
+
+#whatsapp{
+    width: 100px;
+    height: 70px;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    margin: 6em;
+
+}
+ /*Configurações para celulares*/
+@media(min-width:0px) and (max-width:800px){
+    #whatsapp{
+        width: 60px;
+        margin-right: 20px;
+    }
+}
